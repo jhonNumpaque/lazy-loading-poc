@@ -7,7 +7,7 @@ import { IonicModule } from 'ionic-angular';
     HomePage,
   ],
   imports: [
-    IonicModule.getShared()
+    // IonicModule.getShared()
   ],
   entryComponents: [
     HomePage

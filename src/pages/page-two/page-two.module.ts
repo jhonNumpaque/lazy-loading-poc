@@ -7,7 +7,7 @@ import { IonicModule } from 'ionic-angular';
     PageTwo,
   ],
   imports: [
-    IonicModule.getShared()
+    // IonicModule.getShared()
   ],
   entryComponents: [
     PageTwo
@@ -16,4 +16,8 @@ import { IonicModule } from 'ionic-angular';
 })
 export class PageTwoModule {
 
+}
+
+export function getView() {
+  return PageTwo;
 }

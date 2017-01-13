@@ -13,9 +13,9 @@ import * as Constants from '../util/constants';
   imports: [
     IonicModule.forRoot(MyApp, {}, {
       links: [
-        { path: '../pages/home/home.module', namedExport: 'HomePageModule', name: 'Home' },
-        { path: '../pages/page-one/page-one.module', namedExport: 'PageOneModule', name: 'PageOne' },
-        { path: '../pages/page-two/page-two.module', namedExport: 'PageTwoModule', name: 'PageTwo' }
+        { loadChildren: '../pages/home/home.module#HomePageModule', name: 'Home' },
+        { loadChildren: '../pages/page-one/page-one.module#PageOneModule', name: 'PageOne' },
+        { loadChildren: '../pages/page-two/page-two.module#PageTwoModule', name: 'PageTwo' }
       ]
     })
   ],
