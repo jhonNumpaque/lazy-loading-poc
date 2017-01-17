@@ -13,7 +13,6 @@ import * as Constants from '../util/constants';
   imports: [
     IonicModule.forRoot(MyApp, {}, {
       links: [
-        { loadChildren: '../pages/home/home.module#HomePageModule', name: 'Home' },
         { loadChildren: '../pages/page-one/page-one.module#PageOneModule', name: 'PageOne' },
         { loadChildren: '../pages/page-two/page-two.module#PageTwoModule', name: 'PageTwo' }
       ]
