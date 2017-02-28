@@ -9,20 +9,7 @@ import { NavController } from 'ionic-angular';
 */
 @Component({
   selector: 'page-page-two',
-  template: `
-  <ion-header>
-
-  <ion-navbar>
-    <ion-title>Page-Two</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
-  <button ion-button (click)="goBack()">Go Back</button>
-</ion-content>
-  `
+  templateUrl: './page-two.html'
 })
 export class PageTwo {
 

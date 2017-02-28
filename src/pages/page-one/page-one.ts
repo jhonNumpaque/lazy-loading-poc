@@ -9,28 +9,13 @@ import { NavController } from 'ionic-angular';
 */
 @Component({
   selector: 'page-page-one',
-  template: `
-  <ion-header>
-
-  <ion-navbar>
-    <ion-title>Page-One</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
-  <button ion-button (click)="nextPage()">Next Page</button>
-  <button ion-button (click)="previousPage()">Back</button>
-</ion-content>
-  `
+  templateUrl: './page-one.html'
 })
 export class PageOne {
 
   constructor(public navCtrl: NavController) {}
 
   ionViewDidLoad() {
-    console.log('Hello PageOnePage Page one two three four');
   }
 
   nextPage() {
