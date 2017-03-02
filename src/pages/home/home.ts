@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 
-import { DeepLink, NavController } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 
-@DeepLink({})
 @Component({
   selector: 'page-home',
   template: `

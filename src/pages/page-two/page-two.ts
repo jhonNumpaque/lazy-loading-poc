@@ -33,7 +33,10 @@ export class PageTwo {
   }
 
   openModal() {
-    const viewController = this.modalController.create('PageThree');
-    viewController.present();
+    //const viewController = this.modalController.create('PageThree');
+    //viewController.present();
+
+
+    this.navCtrl.push('PageThree');
   }
 }
