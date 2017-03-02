@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
-import { PageOne } from './page-one';
 import { DeepLinkModule } from 'ionic-angular';
+
+import { HomePage } from './home';
 
 @NgModule({
   declarations: [
-    PageOne,
+    HomePage,
   ],
   imports: [
-    DeepLinkModule.forChild(PageOne)
+    DeepLinkModule.forChild(HomePage),
   ],
   entryComponents: [
-    PageOne
+    HomePage
   ]
 })
-export class PageOneModule {}
+export class HomePageModule {}

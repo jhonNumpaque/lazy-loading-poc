@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
-import { PageTwo } from './page-two';
+import { PageThree } from './page-three';
 import { DeepLinkModule } from 'ionic-angular';
 
 @NgModule({
   declarations: [
-    PageTwo,
+    PageThree,
   ],
   imports: [
-    DeepLinkModule.forChild(PageTwo)
+    DeepLinkModule.forChild(PageThree)
   ]
 })
-export class PageTwoModule {
+export class PageThreeModule {
 
 }

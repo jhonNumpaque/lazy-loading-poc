@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { LoadingController, ModalController, NavController } from 'ionic-angular';
+
+//import { PageThree } from '../page-three/page-three';
 
 /*
   Generated class for the PageTwo page.
@@ -13,12 +15,25 @@ import { NavController } from 'ionic-angular';
 })
 export class PageTwo {
 
-  constructor(public navCtrl: NavController) {}
+  constructor(public loadingController: LoadingController, public modalController: ModalController, public navCtrl: NavController) {}
 
   ionViewDidLoad() {
   }
 
   goBack() {
     this.navCtrl.pop();
+  }
+
+  showLoader() {
+    const viewController = this.loadingController.create({
+      duration: 2000
+    });
+
+    viewController.present();
+  }
+
+  openModal() {
+    const viewController = this.modalController.create('PageThree');
+    viewController.present();
   }
 }
